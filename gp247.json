@@ -7,8 +7,8 @@
     "configGroup": "Plugins",
     "configCode": "LoginSocial",
     "configKey": "LoginSocial",
-    "version": "1.0",
-    "requireCore": ["1.2"],
+    "version": "2.0",
+    "requireCore": ["2.0"],
     "requirePackages": ["laravel/socialite"],
     "requireExtensions": []
 }

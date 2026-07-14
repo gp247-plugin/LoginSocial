@@ -16,7 +16,7 @@ The LoginSocial plugin allows users to log into the GP247 system using social me
 
 ## System Requirements
 
-- GP247 Core >= 1.2
+- GP247 Core >= 2.0
 - Laravel 12.x
 - PHP >= 8.2
 - Laravel Socialite ^5.0
@@ -400,6 +400,11 @@ The plugin supports the following guards:
 MIT License
 
 ## Changelog
+
+### Version 2.0
+- Admin configuration screen rebuilt on TailAdmin/Livewire (requires GP247 Core 2.0); no change to how providers/guards are configured or to the stored OAuth settings
+- Client Secret fields keep the same masked, "leave blank to keep the current value" behavior
+- Removed unused scaffold leftovers (`Controllers/FrontController.php`, `Views/Front.blade.php`, `Views/script.blade.php`) that were never wired to any route
 
 ### Version 1.0
 - Initial release

@@ -31,14 +31,10 @@ if(gp247_extension_check_active($config['configGroup'], $config['configKey'])) {
         [
             'prefix' => GP247_ADMIN_PREFIX.'/loginsocial',
             'middleware' => GP247_ADMIN_MIDDLEWARE,
-            'namespace' => '\App\GP247\Plugins\LoginSocial\Admin',
-        ], 
+        ],
         function () {
-            Route::get('/', 'AdminController@index')
+            Route::get('/', \App\GP247\Plugins\LoginSocial\Livewire\AdminLivewire::class)
                 ->name('admin_loginsocial.index');
-            
-            Route::post('/save', 'AdminController@save')
-                ->name('admin_loginsocial.save');
         }
     );
 }

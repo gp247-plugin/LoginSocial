@@ -16,7 +16,7 @@ Plugin LoginSocial cho phép người dùng đăng nhập vào hệ thống GP24
 
 ## Yêu cầu hệ thống
 
-- GP247 Core >= 1.2
+- GP247 Core >= 2.0
 - Laravel 12.x
 - PHP >= 8.2
 - Laravel Socialite ^5.0
@@ -402,6 +402,11 @@ Plugin hỗ trợ các guards sau:
 MIT License
 
 ## Changelog
+
+### Version 2.0
+- Xây dựng lại màn hình cấu hình admin bằng TailAdmin/Livewire (yêu cầu GP247 Core 2.0); không thay đổi cách cấu hình providers/guards hay cách lưu trữ cấu hình OAuth
+- Trường Client Secret vẫn giữ hành vi che giấu (masked) và "để trống để giữ nguyên giá trị hiện tại" như trước
+- Xóa các file scaffold thừa không dùng đến (`Controllers/FrontController.php`, `Views/Front.blade.php`, `Views/script.blade.php`) chưa từng được route nào trỏ tới
 
 ### Version 1.0
 - Release đầu tiên
