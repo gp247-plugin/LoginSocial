@@ -8,7 +8,7 @@
     "configCode": "LoginSocial",
     "configKey": "LoginSocial",
     "version": "2.0",
-    "requireCore": ["2.0"],
-    "requirePackages": ["laravel/socialite"],
-    "requireExtensions": []
+    "requireCore": ["2.1"],
+    "requireComposerPackages": ["laravel/socialite"],
+    "requireGp247Extensions": []
 }
