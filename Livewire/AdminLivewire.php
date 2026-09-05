@@ -76,17 +76,25 @@ class AdminLivewire extends GP247AdminComponent
             }
 
             foreach ($fields as $field => $value) {
+                $attributes = [
+                    'group' => 'Plugins',
+                    'value' => $value,
+                    'detail' => 'Plugins/LoginSocial::lang.admin.config.'.$provider.'_'.$field,
+                ];
+                // Secret at rest: flag the OAuth client secret so the Eloquent write-choke
+                // (AdminConfig::saving) encrypts it — on fresh installs too, where this
+                // updateOrCreate creates the row (core's one-off migration only covers
+                // upgrades). Non-secret fields (enabled/client_id/redirect) stay plaintext.
+                if ($field === 'client_secret') {
+                    $attributes['security'] = 1;
+                }
                 AdminConfig::updateOrCreate(
                     [
                         'code' => 'LoginSocial_config',
                         'key' => $provider.'_'.$field,
                         'store_id' => $globalStoreId,
                     ],
-                    [
-                        'group' => 'Plugins',
-                        'value' => $value,
-                        'detail' => 'Plugins/LoginSocial::lang.admin.config.'.$provider.'_'.$field,
-                    ]
+                    $attributes
                 );
             }
 
