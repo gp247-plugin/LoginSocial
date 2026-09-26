@@ -36,6 +36,27 @@ composer require laravel/socialite
 3. Find "LoginSocial" and click "Install"
 4. After successful installation, click "Enable" to activate the plugin
 
+#### Install from the command line (CLI, gp247 3.x)
+
+This is an alternative to the 4 actions above. Since gp247 3.x you can download **LoginSocial** from the GP247 library and install it straight from the command line, without opening the admin. **Step 1 must be done first** (`composer require laravel/socialite`), otherwise the command stops because the package is missing. Open a terminal in the website's root folder and run:
+
+```bash
+# 1) Once per website: register the (free) API License that connects the site to the GP247 library
+php artisan gp247:ext-register-license
+
+# 2) Download the plugin from the library and install it
+php artisan gp247:ext-install --type=plugin --key=LoginSocial
+```
+
+- Before step 1, make sure `APP_URL` in `.env` is the website's **real domain** (not `http://localhost`) — the license is bound to that domain.
+- Once installed, the plugin is **enabled** and caches are refreshed automatically; you no longer need to click Install/Enable in the admin.
+- The command checks the requirements declared in `gp247.json` (core version, composer packages, required plugins) and stops with a clear message if something is missing (e.g. `laravel/socialite` is not installed).
+- If the folder `app/GP247/Plugins/LoginSocial` is already on the server (copied manually or shipped with the installer), the command **installs it in place** instead of downloading it again.
+- The command refuses a plugin that is already installed. To move to a newer version, run `php artisan gp247:ext-update --type=plugin --key=LoginSocial`.
+- Append `--json` to get machine-readable output (for scripts/CI).
+- The post-install configuration steps below still apply: you still need **Step 3** (create the OAuth app at each provider) and **Step 4** (enter Client ID/Secret in the Admin Panel).
+- More: [Installing Plugins & Templates](https://github.com/gp247net/gp247-docs/blob/main/extension/install-extension.md) · [Command reference](https://github.com/gp247net/gp247-docs/blob/main/system/command-line-reference.md).
+
 ### Step 3: Configure OAuth Providers
 
 
