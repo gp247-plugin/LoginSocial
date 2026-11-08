@@ -57,7 +57,7 @@ php artisan gp247:ext-install --type=plugin --key=LoginSocial
 - プラグインがすでにインストール済みの場合、コマンドは実行を拒否します。新しいバージョンにするには、`php artisan gp247:ext-update --type=plugin --key=LoginSocial` を実行してください。
 - コマンドの末尾に `--json` を付けると、機械可読な形式で結果を受け取れます（スクリプト/CI 向け）。
 - 以下のインストール後の設定手順はそのまま必要です。**ステップ 3**（各プロバイダーで OAuth アプリを作成）と**ステップ 4**（Admin Panel でクライアントID/シークレットを入力）は引き続き実施してください。
-- 詳細：[プラグイン＆テンプレートのインストールガイド](https://github.com/gp247net/gp247-docs/blob/main/extension/install-extension.md) · [コマンドリファレンス](https://github.com/gp247net/gp247-docs/blob/main/system/command-line-reference.md)。
+- 詳細：[プラグイン＆テンプレートのインストールガイド](https://github.com/gp247net/gp247-docs/blob/main/extension/install-extension.md) · [コマンドリファレンス](https://github.com/gp247net/gp247-docs/blob/main/cli/cli-extensions_ja.md)。
 
 ### ステップ 3：OAuth プロバイダーを設定する
 

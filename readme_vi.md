@@ -57,7 +57,7 @@ php artisan gp247:ext-install --type=plugin --key=LoginSocial
 - Nếu plugin đã được cài, lệnh sẽ từ chối. Để lên bản mới, chạy `php artisan gp247:ext-update --type=plugin --key=LoginSocial`.
 - Thêm `--json` vào cuối lệnh để nhận kết quả dạng máy đọc được (dùng cho script/CI).
 - Các bước cấu hình sau khi cài bên dưới vẫn giữ nguyên: bạn vẫn phải làm **Bước 3** (tạo OAuth app ở từng provider) và **Bước 4** (nhập Client ID/Secret trong Admin Panel).
-- Chi tiết: [Hướng dẫn cài đặt Plugin & Template](https://github.com/gp247net/gp247-docs/blob/main/extension/install-extension_vi.md) · [Tra cứu lệnh](https://github.com/gp247net/gp247-docs/blob/main/system/command-line-reference_vi.md).
+- Chi tiết: [Hướng dẫn cài đặt Plugin & Template](https://github.com/gp247net/gp247-docs/blob/main/extension/install-extension_vi.md) · [Tra cứu lệnh](https://github.com/gp247net/gp247-docs/blob/main/cli/cli-extensions_vi.md).
 
 ### Bước 3: Cấu hình OAuth Providers
 
