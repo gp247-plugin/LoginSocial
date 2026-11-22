@@ -1,6 +1,6 @@
 > 🌐 **言語:** [🇻🇳 Tiếng Việt](./readme_vi.md) · [🇬🇧 English](./readme.md) · 🇯🇵 日本語（現在）
 
-# GP247 用 LoginSocial プラグイン
+# S-Cart 用 LoginSocial プラグイン
 
 ## 概要
 

@@ -1,6 +1,6 @@
 > 🌐 **Language:** [🇻🇳 Tiếng Việt](./readme_vi.md) · 🇬🇧 English (current) · [🇯🇵 日本語](./readme_ja.md)
 
-# LoginSocial Plugin for GP247
+# LoginSocial Plugin for S-Cart
 
 ## Overview
 
