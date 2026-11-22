@@ -4,7 +4,7 @@
 
 ## 概要
 
-LoginSocial プラグインを使うと、ユーザーは Facebook、Google、GitHub などのソーシャルメディアアカウントや、その他多くのプロバイダーで GP247 システムにログインできます。プラグインは複数の guard（admin、customer、vendor、pmo…）に対応しており、ユーザー認証を柔軟に管理できます。
+LoginSocial プラグインを使うと、ユーザーは Facebook、Google、GitHub などのソーシャルメディアアカウントや、その他多くのプロバイダーで S-Cart サイトにログインできます。プラグインは複数の guard（admin、customer、vendor、pmo…）に対応しており、ユーザー認証を柔軟に管理できます。
 
 ## 機能
 

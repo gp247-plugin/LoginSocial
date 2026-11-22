@@ -4,7 +4,7 @@
 
 ## Overview
 
-The LoginSocial plugin allows users to log into the GP247 system using social media accounts such as Facebook, Google, GitHub, and other providers. The plugin supports multiple guards (admin, customer, vendor, pmo...) for flexible user authentication management.
+The LoginSocial plugin allows users to log into your S-Cart site using social media accounts such as Facebook, Google, GitHub, and other providers. The plugin supports multiple guards (admin, customer, vendor, pmo...) for flexible user authentication management.
 
 ## Features
 

@@ -4,7 +4,7 @@
 
 ## Tổng quan
 
-Plugin LoginSocial cho phép người dùng đăng nhập vào hệ thống GP247 bằng các tài khoản mạng xã hội như Facebook, Google, GitHub và nhiều providers khác. Plugin hỗ trợ đa guards (admin, customer, vendor, pmo...) cho phép linh hoạt trong việc quản lý xác thực người dùng.
+Plugin LoginSocial cho phép người dùng đăng nhập vào site S-Cart bằng các tài khoản mạng xã hội như Facebook, Google, GitHub và nhiều providers khác. Plugin hỗ trợ đa guards (admin, customer, vendor, pmo...) cho phép linh hoạt trong việc quản lý xác thực người dùng.
 
 ## Tính năng
 
